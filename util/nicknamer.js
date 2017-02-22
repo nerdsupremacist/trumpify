@@ -12,8 +12,10 @@ function nicknamer(text, feeling, callback) {
             var items = replace.reduce(function(r, i) {
                 return r.concat(response.entities[i] || []);
             }, []);
+            var offset = -0.4;
             for (var i = 0; i < items.length; i++) {
-                if (Math.random() >= 0.5) {
+                if (Math.random() >= 0.5 + offset) {
+                    offset += 0.3;
                     var words = dict[feeling];
                     var next = words[Math.floor((Math.random() * words.length))];
                     text = text.replace(items[i], next + " " + items[i]);
