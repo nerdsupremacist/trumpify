@@ -9,13 +9,16 @@ Using NLP Trumpify notices the intent and different entities in your sentences a
 For example:
 
 ```
-The New York Times keeps spreading inaccurate information. The media truly is the adversary of my administration.
+The New York Times keeps spreading inaccurate information. 
+The media truly is the adversary of my administration.
 ```
 
 Turns into:
 
 ```
-The outragious New York Times keeps spreading wrong information. The media truly is the adversary of my presidential term. SO NOT GOOD!
+The outragious New York Times keeps spreading wrong information. 
+The media truly is the adversary of my presidential term. 
+SO NOT GOOD!
 ```
 
 As you can imagine this is perfect for tweeting! ;)
