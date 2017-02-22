@@ -78,7 +78,7 @@ var words = {
         "disastrous",
         "disaster",
         "tanked",
-        "underachiving",
+        "underachieving",
         "lie",
         "total lie",
         "problem",
