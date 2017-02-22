@@ -29,10 +29,8 @@ function getSynonyms(text, keywords, callback) {
                 if (Math.random() > 0.3) {
                     text = text.replace(item, next);
                 }
-                count += 1;
-            } else if (response.statusCode == 404) {
-                count += 1;
             }
+            count += 1;
             if (count == keywords.length) {
                 callback(text);
             }
