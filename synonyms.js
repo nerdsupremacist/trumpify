@@ -7,7 +7,7 @@ var words = ["positive", "negative", "other"].reduce(function(r, i) {
 
 function synonymsIn(object) {
     return Object.keys(object).reduce(function(r, i) {
-        var w = ["syn", "rel"].reduce(function(r, j) {
+        var w = ["syn", "sim", "rel"].reduce(function(r, j) {
             return r.concat(object[i][j] || []);
         }, []);
         return r.concat(w);

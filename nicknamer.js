@@ -13,14 +13,16 @@ function nicknamer(text, feeling, callback) {
                 return r.concat(response.entities[i] || []);
             }, []);
             for (var i = 0; i < items.length; i++) {
-                if (Math.random() > 0.75) {
+                if (Math.random() >= 0.5) {
                     var words = dict[feeling];
                     var next = words[Math.floor((Math.random() * words.length))];
                     text = text.replace(items[i], next + " " + items[i]);
                 }
             }
             var keywords = (response.entities.keyword || []).filter(function(x) {
-                return items.indexOf(x) < 0;
+                return items.reduce(function(r, i) {
+                    return r && i.indexOf(x) <= -1;
+                }, true) && x.toUpperCase() !== x;
             });
             callback(text, keywords);
         }
