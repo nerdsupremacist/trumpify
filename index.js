@@ -1,6 +1,6 @@
-var tagger = require('./tag.js');
-var nicknamer = require('./nicknamer.js');
-var words = require('./synonyms.js');
+var tagger = require('./util/tag.js');
+var nicknamer = require('./util/nicknamer.js');
+var words = require('./util/synonyms.js');
 
 function process(text, callback) {
     tagger(text, function(text, sentiment) {
