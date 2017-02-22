@@ -12,6 +12,7 @@
     <script>
 
         function trumpify(text, callback) {
+            var base = "https://trumpifyserver-vlyklrpgju.now.sh"
             var request = new XMLHttpRequest();
             request.onreadystatechange = function() {
                 if (this.readyState == 4) {
@@ -22,7 +23,7 @@
             var body = {
                 text: text
             }
-            request.open("POST", "https://trumpifyserver-zffnxgoavm.now.sh/trump", true);
+            request.open("POST", base + "/trump", true);
             request.send(JSON.stringify(body, 4, 0));
         }
 
