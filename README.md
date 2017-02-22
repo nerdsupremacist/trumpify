@@ -20,8 +20,8 @@ The media truly is the adversary of my administration.
 Turns into:
 
 ```
-The outragious New York Times keeps spreading wrong information. 
-The media truly is the adversary of my presidential term. 
+The failing New York Times keeps spreading wrong information. 
+The media truly is the opponent of my presidential term. 
 SO NOT GOOD!
 ```
 
