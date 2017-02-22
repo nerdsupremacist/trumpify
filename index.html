@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trumpify</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="trumpify.js"></script>
+
+    <script>
+        var startHTML = "<div class=\"col s12 m8 offset-m2 l6 offset-l3\"><div class=\"card-panel z-depth-3\"><div class=\"row valign-wrapper\"><div class=\"col s2\"><img src=\"https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_400x400.jpg\" alt=\"\" class=\"responsive-img\"></div><div class=\"col s10\"><span class=\"black-text\">"
+        var endHTML = "</span></div></div></div></div>"
+        function trumpifyInput() {
+            var text = $('#text')[0].value
+            trumpify(text, function(trumpified) {
+                console.log(trumpified);
+                var html = $.parseHTML(startHTML + trumpified + endHTML)[0];
+                $("#tweets")[0].appendChild(html);
+                $("#text")[0].value = ""
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container">
+            <img class="responsive-img" src="logo.png">
+        </div>
+        <div class="container">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="text" class="materialize-textarea"></textarea>
+                            <label for="text">Type your tweets and they will be trumpified...</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s4"></div>
+                        <div class="col s4">
+                            <a class="waves-effect waves-light btn" onclick="trumpifyInput()">Trumpify</a>
+                        </div>
+                        <div class="col s4"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container" id="tweets">
+
+        </div>
+    </div>
+</body>
+
+</html>
