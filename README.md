@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/mathiasquintero/trumpify/master/logo.png "Small logo I made while I had time ;)")
+<div><img src="https://raw.githubusercontent.com/mathiasquintero/trumpify/master/logo.png" height=200></div>
 
 # Trumpify
 ### Make your words be the BEST WORDS.
