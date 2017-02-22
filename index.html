@@ -19,7 +19,7 @@
             trumpify(text, function(trumpified) {
                 console.log(trumpified);
                 var html = $.parseHTML(startHTML + trumpified + endHTML)[0];
-                $("#tweets")[0].appendChild(html);
+                $("#tweets")[0].prepend(html);
                 $("#text")[0].value = ""
             });
         }
@@ -54,6 +54,14 @@
         </div>
         <div class="container" id="tweets">
 
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s7"></div>
+                <div class="col s5">
+                    <p>Made with ♥ by <a href="http://quintero.io/">Mathias Quintero</a></p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
