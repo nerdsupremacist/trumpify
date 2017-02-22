@@ -1,3 +1,5 @@
+<div><img src="http://i.giphy.com/95EqkcvnV48mY.gif" height=350></div>
+
 # Trumpify
 ### Make your words be the BEST WORDS.
 
