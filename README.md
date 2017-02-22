@@ -22,6 +22,13 @@ The media truly is the adversary of my presidential term.
 SO NOT GOOD!
 ```
 
+So what happened here?
+
+* Trumpify checked the intent of our message and notice a negative position. 
+* It added a TrumpStyle finishing sentence using this sentiment. 
+* Then it identified that we're talking about the New York Times and added a TrumpStyle insult. 
+* Finally it identified the complex words such as "inaccurate" and "administration", and looked for synonims that are used by trump often.
+
 As you can imagine this is perfect for tweeting! ;)
 
 It's still pretty buggy, but I think with a bit more work, we can make Tweeting Great Again
