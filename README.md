@@ -1,4 +1,5 @@
 # Trumpify
+### Make your words be the BEST WORDS.
 
 The President usually set the standard in fashion for the next few years. And no fashion statement of the Trump presidency has been more present than the way he talks (and most importantly tweets).
 
