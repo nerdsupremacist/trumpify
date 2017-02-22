@@ -35,7 +35,7 @@
                 if (trumpified) {
                     console.log(trumpified);
                     var html = $.parseHTML(startHTML + trumpified + endHTML)[0];
-                    $("#tweets")[0].prepend(html);
+                    $("#tweets").prepend(html);
                 }
                 $("#text")[0].value = ""
             });
