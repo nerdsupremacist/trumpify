@@ -1,9 +1,11 @@
-<div><img src="http://i.giphy.com/95EqkcvnV48mY.gif" height=350></div>
+![alt text](https://raw.githubusercontent.com/mathiasquintero/trumpify/master/logo.png "Small logo I made while I had time ;)")
 
 # Trumpify
 ### Make your words be the BEST WORDS.
 
 The President usually set the standard in fashion for the next few years. And no fashion statement of the Trump presidency has been more present than the way he talks (and most importantly tweets).
+
+<div><img src="http://i.giphy.com/95EqkcvnV48mY.gif" height=350></div>
 
 Trumpify is here to help you imitate his style. (WIP)
 
