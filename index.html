@@ -9,17 +9,33 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    <script src="trumpify.js"></script>
-
     <script>
+
+        function trumpify(text, callback) {
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    var item = JSON.parse(request.responseText) || {};
+                    callback(item.text);
+                }
+            };
+            var body = {
+                text: text
+            }
+            request.open("POST", "https://trumpifyserver-zffnxgoavm.now.sh/trump", true);
+            request.send(JSON.stringify(body, 4, 0));
+        }
+
         var startHTML = "<div class=\"col s12 m8 offset-m2 l6 offset-l3\"><div class=\"card-panel z-depth-3\"><div class=\"row valign-wrapper\"><div class=\"col s2\"><img src=\"https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_400x400.jpg\" alt=\"\" class=\"responsive-img\"></div><div class=\"col s10\"><span class=\"black-text\">"
         var endHTML = "</span></div></div></div></div>"
         function trumpifyInput() {
             var text = $('#text')[0].value
             trumpify(text, function(trumpified) {
-                console.log(trumpified);
-                var html = $.parseHTML(startHTML + trumpified + endHTML)[0];
-                $("#tweets")[0].prepend(html);
+                if (trumpified) {
+                    console.log(trumpified);
+                    var html = $.parseHTML(startHTML + trumpified + endHTML)[0];
+                    $("#tweets")[0].prepend(html);
+                }
                 $("#text")[0].value = ""
             });
         }
