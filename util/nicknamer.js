@@ -18,7 +18,9 @@ function nicknamer(text, feeling, callback) {
                     offset += 0.3;
                     var words = dict[feeling];
                     var next = words[Math.floor((Math.random() * words.length))];
-                    text = text.replace(items[i], next + " " + items[i]);
+                    if (next) {
+                        text = text.replace(items[i], next + " " + items[i]);
+                    }
                 }
             }
             var keywords = (response.entities.keyword || []).filter(function(x) {

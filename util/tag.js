@@ -8,7 +8,7 @@ function tagger(text, callback) {
         var feeling = response.polarity;
         var words = dict[feeling];
         var next = words[Math.floor((Math.random() * words.length))];
-        if (Math.random() > 0.2) {
+        if (next && Math.random() > 0.2) {
             text = text + " " + next.toUpperCase() + "!";
         }
         callback(text, response.polarity);

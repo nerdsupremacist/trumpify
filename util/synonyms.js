@@ -32,7 +32,7 @@ function getSynonyms(text, keywords, callback) {
                 var info = JSON.parse(body);
                 var others = synonymsIn(info.response).concat([item]);
                 var next = others[Math.floor((Math.random() * others.length))];
-                if (Math.random() > 0.3) {
+                if (next && Math.random() > 0.3) {
                     text = text.replace(item, next);
                 }
             }
