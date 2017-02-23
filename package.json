@@ -1,6 +1,6 @@
 {
   "name": "trumpify-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Make your words be the best Words - Instant text trumpifier",
   "main": "index.js",
   "scripts": {
