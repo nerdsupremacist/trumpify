@@ -36,6 +36,8 @@ As you can imagine this is perfect for tweeting! ;)
 
 It's still pretty buggy, but I think with a bit more work, we can make Tweeting Great Again
 
-## Considering
+## Possible Uses
 
-This perhaps could be integrated into a Chrome Extension that trumpifies your entries into text fields
+* Trump Slack Command
+* Trumpify Chrome Extension
+
