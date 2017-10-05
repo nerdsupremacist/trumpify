@@ -1,5 +1,7 @@
 <div><img src="https://raw.githubusercontent.com/mathiasquintero/trumpify/master/logo.png" height=200></div>
+
 # Trumpify
+
 ### Make your words be the BEST WORDS.
 
 The President usually set the standard in fashion for the next few years. And no fashion statement of the Trump presidency has been more present than the way he talks (and most importantly tweets). For a demo go [Here](http://quintero.io/trumpify/)
